@@ -6,7 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
-      - name: Install pandoc and wkhtmltopdf
+      - name: Install pandoc
+        uses: r-lib/actions/setup-pandoc@v1
+        with:
+          pandoc-version: '2.5'
+      - name: Install wkhtmltopdf
         run: sudo apt-get install -y pandoc wkhtmltopdf
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
