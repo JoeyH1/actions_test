@@ -20,8 +20,6 @@ jobs:
         with:
           ruby-version: '3.1.2'
           bundler-cache: true
-      - name: Install Ruby Gems
-        run: bundle install
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Create Release
