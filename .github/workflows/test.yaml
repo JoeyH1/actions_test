@@ -7,7 +7,7 @@ jobs:
     permissions: write-all
     steps:
       - name: Install pandoc
-        uses: r-lib/actions/setup-pandoc@v1
+        uses: r-lib/actions/setup-pandoc@v2
         with:
           pandoc-version: '2.5'
       - name: Install wkhtmltopdf
