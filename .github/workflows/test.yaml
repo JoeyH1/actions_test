@@ -11,7 +11,7 @@ jobs:
         with:
           pandoc-version: '2.5'
       - name: Install wkhtmltopdf
-        run: sudo apt-get install -y pandoc wkhtmltopdf
+        run: sudo apt-get install -y wkhtmltopdf
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
