@@ -23,6 +23,7 @@ jobs:
         run: |
           pwd
           ls
+          cd .. && ls
       - name: Install Ruby Gems
         run: bundle install
       - name: Checkout code
