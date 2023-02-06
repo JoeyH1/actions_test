@@ -22,6 +22,8 @@ jobs:
           bundler-cache: true
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Run Rake
+        run: rake action_test:puts_hello_world
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -36,4 +38,3 @@ jobs:
             - Second Change
           draft: false
           prerelease: false
-          run: rake action_test:puts_hello_world
