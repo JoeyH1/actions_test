@@ -19,11 +19,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1.2'
-      - name: Exploring Dirs Test
-        run: |
-          pwd
-          ls
-          cd .. && ls
+          bundler-cache: true
       - name: Install Ruby Gems
         run: bundle install
       - name: Checkout code
