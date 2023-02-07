@@ -36,6 +36,6 @@ end
 
 namespace :action_test do
   task :puts_hello_world do
-    ruby "puts hello world"
+    puts "Hello World!"
   end
 end
